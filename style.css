@@ -512,7 +512,7 @@ aside
 	padding-top: 90px;	/*pour compenser la hauteur du menu fixed*/
 	background-color: #F5F5F5;
 }
-#portfolio h1, #portfolio:first-child p
+#portfolio h1, #portfolio p
 {
 	text-align: center;
 }
