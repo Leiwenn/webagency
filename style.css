@@ -185,10 +185,10 @@
 /* ----------------fin de slider-----*/
 
 /* ----------------déclarations communes----------------------------------------------- */
-.bloc_page
+body
 {
-	max-width: 1400px;
-	margin: auto;
+	margin: 0;
+	padding: 0;
 	font-family: 'robotoregular';
 }
 h1, h2
@@ -676,7 +676,7 @@ iframe
 .voile   /*voile sur la carte*/
 {
 	background-color: rgba(52, 145, 178, 0.3);
-	width: 98.5%;
+	width: 100%;
 	position: absolute;
 }
 form
@@ -744,13 +744,9 @@ input[type="submit"]
 
 @media screen and (min-width: 2560px)
 {
-	.presentation
-	{
-		
-	}
 	form
 	{
-		left: 60%;
+		left: 55%;
 	}
 }
 
@@ -758,12 +754,17 @@ input[type="submit"]
 {
 	.presentation
 	{
-		left: 30% !important;
+		left: 40% !important;
 	}
 }
 
 @media screen and (min-width: 1200px)
 {
+	.bloc_page
+	{
+		max-width: 1400px;
+		margin: auto;
+	}
 	.en-tete
 	{
 		margin-top: 90px;
@@ -796,11 +797,11 @@ input[type="submit"]
 	}
 	.presentation
 	{
-		top: 15%;
+		top: 20%;
 	}
 	.timer
 	{
-		bottom: 102px;
+		bottom: 97px;
 	}
 	.para
 	{
@@ -1066,7 +1067,7 @@ input[type="submit"]
 	}
 }
 
-@media screen and (max-width: 320px)		 /* ----------------------------------petits smartphones---- */
+@media screen and (max-width: 370px)		 /* ----------------------------------petits smartphones---- */
 {
 	header
 	{
