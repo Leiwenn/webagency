@@ -281,6 +281,7 @@ header
 	align-items: center; /*centrer verticalement sur l'axe horizontal*/
 	justify-content: space-between;
 	z-index: 2;	/*au dessus*/
+	background-color: white;
 }
 #logo
 {
