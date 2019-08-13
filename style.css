@@ -63,7 +63,7 @@
 		left: 0%; /*image 1*/
 	}
 }
-.slide
+.slide	/*liste UL qui contient les images du slider*/
 {
 	position: absolute;	/*pour mettre les slides (.slider) en position relative dessus*/
 	margin: 0;
@@ -79,7 +79,7 @@
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 }
-.slider
+.slider	/*conteneur de .slide*/
 {
 	position: relative;
 	width: 100%;
@@ -98,6 +98,7 @@
 	-webkit-animation: timer 10s infinite;
 	animation: timer 10s infinite;
 }
+/* animation de la barre "timer"*/
 @-webkit-keyframes timer
 {
 	0%
@@ -151,7 +152,7 @@
 {
 	color: white;	/*couleur des chevrons*/
 }
-.prev, .next
+.prev, .next	/*flèches du slider*/
 {	
 	position: absolute;
 	top: 44%;
@@ -165,7 +166,7 @@
 {
 	left: 98.5%;
 }
-.cercle-prev, .cercle-next
+.cercle-prev, .cercle-next	/*cercles autour des flèches*/
 {
 	position: absolute;
 	top: 39%;
@@ -248,7 +249,7 @@ button:hover, input[type="submit"]:hover
 	height: 15px;
 	border-radius: 50%;
 }
-.bordure
+.bordure	/*bordure blanche autour du rond*/
 {
 	border: 6px solid white;
 	border-radius: 50%;
@@ -274,9 +275,8 @@ header
 	max-width: 1400px;
 	width: 100%;
 	height: 90px;
-	position: fixed;
+	position: fixed;	/*reste fixe en haut de la fenêtre même au scroll*/
 	top: 0px;
-	background-color: white;
 	display: flex;
 	align-items: center; /*centrer verticalement sur l'axe horizontal*/
 	justify-content: space-between;
@@ -284,13 +284,13 @@ header
 }
 #logo
 {
-	width: auto;
+	width: auto;	/*responsive*/
 	vertical-align: middle;
 	margin-left: 180px;
 }
 .navigation
 {
-	display: block;
+	display: block;	/*display none en xs*/
 	margin-right: 15%;
 }
 .navigation li
@@ -302,13 +302,13 @@ header
 	padding: 34px 10px;
 	font-family: 'robotoregular';
 }
-.navigation a:hover, .navigation a.active
+.navigation a:hover, .navigation a.active	/*aspect au survol et activation par défaut du lien "Accueil"*/
 {
 	color: #575757;
 	border-top: 3px solid #5cadd3;
 }
 /* ----menu xs---- */
-.dropdown
+.dropdown	/*barre de navigation*/
 {
 	position: relative;
 	display: inline-block;
@@ -321,9 +321,9 @@ header
 	margin-right: 45px;
 	margin-top: 25px;
 }
-.dropdown-content
+.dropdown-content	/*liste des liens du menu, en position absolute sur .dropdown*/
 {
-	display: none;
+	display: none;	/*display block au survol*/
 	position: absolute;
 	z-index: 1;
 	overflow: visible;
@@ -339,7 +339,7 @@ header
 	font-size: 12px;
 	padding: 6px;
 }
-.dropdown-content a:hover
+.dropdown-content a:hover	/*aspect des liens du menu au survol*/
 {
 	background-color: #5cadd3;
 }
@@ -347,19 +347,19 @@ header
 /* ----------SECTION EN-TETE-------------------------------------------------------- */
 .en-tete
 {
-	margin-top: 100px;	/*hauteur du header*/
+	margin-top: 100px;	/*compenser la hauteur du header*/
 	height: 550px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
-.presentation
+.presentation	/*paragraphe sur slider*/
 {
 	max-width: 520px;
 	top: 210px;
 	left: 195px;
 	text-align: left;
-	position: absolute;
-	z-index: 1;
+	position: absolute;	/*sur le slider (.slider) qui est en relative*/
+	z-index: 1;	/*au dessus du slider mais en dessous du menu fixe qui est en z-index: 2*/
 }
 .presentation p, .presentation h1
 {
@@ -378,9 +378,9 @@ header
 }
 span
 {
-	color: #5cadd3;
+	color: #5cadd3;	/*couleur du mot webagency dans .presentation*/
 }
-.info
+.info	/*position et taille du bouton de .presentation*/
 {
 	margin-top: 15px;
 	padding: 8px 15px;
@@ -388,12 +388,12 @@ span
 /*présentation pour le format smartphone*/
 .pres-xs
 {
-	display: none;
+	display: none;	/*en display block dans les media queries pour smartphone*/
 }
 .pres-xs h1, .pres-xs p
 {
 	color: white;
-	text-shadow: 2px 2px 4px #2F4F4F;	/*horizontal vertical blur-radius couleur*/ 
+	text-shadow: 2px 2px 4px #2F4F4F;	/*horizontal_vertical_blur-radius_couleur*/ 
 }
 .pres-xs h1
 {
@@ -418,7 +418,7 @@ span
 }
 .bouton-xs:hover
 {
-	background-color: #4096b5;
+	background-color: #4096b5;	/*aspect au survol*/
 }
 
 /* ----------SECTION SERVICES-------------------------------------------------------- */
@@ -426,13 +426,14 @@ span
 {
 	height: 670px;
 	padding-top: 90px;	/*compenser la hauteur du menu fixed pour les ancres du menu*/
-	box-shadow: 0 -10px 30px rgba(211, 211, 211, 0.5);
+	-webkit-box-shadow: 0 -10px 30px rgba(211, 211, 211, 0.5);
+	box-shadow: 0 -10px 30px rgba(211, 211, 211, 0.5);	/*ombre de bas de section .en-tete*/
 }
 #services h1, .paragraphe
 {
 	text-align: center;
 }
-.design
+.design	/*conteneur de l'image .ecran et de aside*/
 {
 	margin-top: 50px;
 	height: 380px;
@@ -441,7 +442,7 @@ span
 .ecran
 {
 	display: block;	/*n'apparaît qu'à partir du format tablette*/
-	align-self: flex-start;
+	align-self: flex-start;	/*en haut du conteneur .design*/
 	text-align: center;
 	width: 700px;
 }
@@ -451,41 +452,41 @@ span
 }
 aside
 {
-	align-self: flex-end;
+	align-self: flex-end;	/*en bas du conteneur .design*/
 	line-height: 1.5;
 	width: 600px;
 }
 .couleur
 {
-	color: #5cadd3;	/*couleur des icones*/
+	color: #5cadd3;	/*couleur des icônes fontawesome*/
 }
-.fa-chart-line, .fa-cubes, .fa-chart-pie
+.fa-chart-line, .fa-cubes, .fa-chart-pie	/*bordure ronde des icônes fontawesome*/
 {
 	border: 1px solid #e5e5e5;
 	border-radius: 50%;
 	padding: 16px;
 }
-.rond-deux
-{
-	margin-left: -11px;
-}
-.rond-para
+.rond-para	/*création du rond bleu*/
 {
 	background-color: #5cadd3;
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
 }
-.bordure-rond-para
+.bordure-rond-para	/*bordure blanche autour du rond*/
 {
 	border: 5px solid white;
 	border-radius: 50%;
 	width: 12px;
 	height: 12px;
 }
-.para
+.rond-deux	/*position du rond bleu sur la bordure des icônes*/
 {
-	display: flex;
+	margin-left: -11px;
+}
+.para	/*conteneur des icônes fontawesome et du texte*/
+{
+	display: flex;	/*aligner horizontalement*/
 	align-items: center;	/*aligner au même niveau*/
 }
 .para h2, .para p
@@ -509,7 +510,7 @@ aside
 	padding-top: 90px;	/*pour compenser la hauteur du menu fixed*/
 	background-color: #F5F5F5;
 	-webkit-box-shadow: 0 -10px 20px rgba(211, 211, 211, 0.5);
-	box-shadow: 0 -10px 30px rgba(211, 211, 211, 0.5);
+	box-shadow: 0 -10px 30px rgba(211, 211, 211, 0.5);	/*ombre de bas de section #services*/
 }
 #portfolio h1, #portfolio p
 {
@@ -545,23 +546,23 @@ aside
 	text-align: center;
 	padding: 5px 0 9px 10px;
 }
-.nav-portfolio a.activer
+.nav-portfolio a.activer	/*activation par défaut du lien "all works"*/
 {
 	background-color: #5cadd3;
 	color: white;
 	border-bottom: 3px solid #468cad;
 }
-.nav-portfolio i.activ
+.nav-portfolio i.activ	/*activation par défaut de la flèche du lien "all works"*/
 {
 	visibility: visible;
 }
-.nav-portfolio a:hover
+.nav-portfolio a:hover	/*aspect au survol des liens*/
 {
 	background-color: #5cadd3;
 	border-bottom: 3px solid #468cad;
 	color: white;
 }
-.gauche
+.gauche	/*bordure arrondie sur les bords gauche et droit du menu avec les classes .gauche et .droit*/
 {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -571,7 +572,7 @@ aside
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
-.fa-caret-down
+.fa-caret-down	/*icône fontawesome flèche en bas des liens*/
 {
 	font-size: 25px;
 	position: relative;
@@ -580,7 +581,7 @@ aside
 	color: #468cad;
 	visibility: hidden;
 }
-.nav-portfolio a:hover .fa-caret-down
+.nav-portfolio a:hover .fa-caret-down	/*icône fontawesome flèche visible au survol du lien*/
 {
 	visibility: visible;
 }
@@ -588,17 +589,17 @@ aside
 /* -IMAGES DU PORTFOLIO---------- */
 .bloc-projets
 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;	/*aligner au centre*/
-	align-items: center;
+	display: flex;			/*les images s'alignent horizontalement sur l'espace disponible*/
+	flex-wrap: wrap;		/*portfolio responsive, les images s'empilent si la fenêtre est réduite*/
+	justify-content: center;	/*images centrées horizontalement*/
+	align-items: center;		/*images centrées verticalement*/
 }
 figure
 {
 	max-width: 280px;
 	max-height: 190px;
 	margin: 15px;
-	position: relative;	/*pour mettre figcaption en absolute afin de le plaçer au dessus*/
+	position: relative;	/*pour mettre figcaption et icône en absolute afin de les plaçer au dessus*/
 	overflow: hidden;
 }
 figcaption h3, figcaption p
@@ -607,9 +608,9 @@ figcaption h3, figcaption p
 	text-align: left !important;	/*!important sinon c'est la règle du #portfolio avec text-align:center qui l'emporte*/
 	margin: 7px 0 0 7px;
 }
-.couleurs
+.couleurs	/*règles pour l'icône fontawesone "oeil"*/
 {
-	color: white;	/*regles pour fa-eye*/
+	color: white;
 	background-color: #5cadd3;
 	border: 2px solid white;
 	padding: 10px;
@@ -617,11 +618,11 @@ figcaption h3, figcaption p
 	position: absolute;
 	bottom: 68%;
 	left: 82%;
-	visibility: hidden;
+	visibility: hidden;	/*sera visible au survol*/
 }
 figcaption
 {
-	display: flex;
+	display: flex;	/*aligner horizontalemnt texte et icône*/
 	position: absolute;
 	bottom: 3px;
 	width: 100%;	/*100% de figure*/
@@ -638,13 +639,14 @@ figure:hover .overlay
 {
 	height: 35%;	/*montera de 35% sur l'image*/
 }
-figure:hover .couleurs
+figure:hover .couleurs	/*icône "oeil" visible au survol de figure*/
 {
 	visibility: visible;
 }
 .separateur-footer
 {
-	display: none;
+	display: none;	/*display block en xs*/
+	padding-bottom: 5px;
 }
 
 /* ----------------------FOOTER--------------------------------------------------------*/
@@ -658,32 +660,26 @@ footer, .voile, iframe
 	height: 750px;
 	max-width: 1440px;
 }
-.separateur-footer
-{
-	display: none;	/*titre pour xs*/
-	padding-bottom: 5px;
-	font-size: 18px;
-}
-iframe
+iframe	/*carte*/
 {
 	width: 100%;
 	height: 100%;
 	border: 0;
 	position: relative;
-	z-index: -1;
+	z-index: -1;	/*sous le voile*/
 }
 .voile   /*voile sur la carte*/
 {
 	background-color: rgba(52, 145, 178, 0.3);
 	width: 100%;
-	position: absolute;
+	position: absolute;	/*sur la carte*/
 }
-form
+form	/*formulaire*/
 {
 	background-color: rgba(255,255,255, 0.8);
 	max-width: 340px;
 	height: 500px;
-	position: absolute;
+	position: absolute;	/*sur la carte*/
 	left: 65%;
 }
 fieldset
@@ -704,11 +700,11 @@ form p
 {
 	font-size: 14px;
 }
-.gras
+.gras	/*partie en gras*/
 {
 	font-family: 'robotobold';
 }
-.souligner
+.souligner	/*partie soulignée*/
 {
 	text-decoration: underline dotted;
 	color: #64686D;
@@ -732,7 +728,7 @@ textarea
 {
 	height: 150px;
 }
-input[type="submit"]
+input[type="submit"]	/*bouton "send message"*/
 {
 	margin-left: 6px;
 	padding: 6px 10px;
@@ -757,12 +753,12 @@ input[type="submit"]
 {
 	.bloc_page
 	{
-		width: 1400px;
-		margin: auto;
+		width: 1400px;	/*largeur maximum*/
+		margin: auto;	/*aligner au centre de body*/
 	}
 	.voile
 	{
-		width: 1400px;
+		width: 1400px;	/*largeur maximum*/
 	}
 }
 
@@ -875,7 +871,7 @@ input[type="submit"]
 	{
 		height: 350px !important;
 		margin-top: 80px;	/*hauteur du header*/
-		background-image: url(img/slider/bg1.jpg);
+		background-image: url(img/slider/bg1.jpg);	/*pas de slider mais image réutilisée en background*/
 		background-size: 100%;
 		background-repeat: no-repeat;
 		box-shadow: none;
@@ -902,8 +898,8 @@ input[type="submit"]
 	}
 	.navigation, #logo
 	{
-		vertical-align: middle;
-		margin: auto;
+		vertical-align: middle;	/*centrés verticalement*/
+		margin: auto;	/*centrés horizontalement*/
 	}
 	.navigation a
 	{
@@ -943,7 +939,7 @@ input[type="submit"]
 		margin-top: 20px;
 	}
 	/* portfolio */
-	.couleurs
+	.couleurs	/*position de l'icône "oeil"*/
 	{
 		left: 230px;
 		bottom: 45px;
@@ -1001,7 +997,7 @@ input[type="submit"]
 	{
 		display: none;
 	}
-	.dropdown
+	.dropdown	/*menu pour smartphone*/
 	{
 		display: block;
 		margin-bottom: 22px;
@@ -1009,7 +1005,7 @@ input[type="submit"]
 	}
 	.en-tete
 	{
-		background-image: linear-gradient(#686c71, #1fb3b1, #5cadd3, #686c71);
+		background-image: linear-gradient(#686c71, #1fb3b1, #5cadd3, #686c71);	/*création d'un dégradé à partir des couleurs du logo*/
 		height: 150px;
 		margin-top: 70px;
 	}
@@ -1077,7 +1073,7 @@ input[type="submit"]
 	#contact
 	{
 		height: 550px;
-		background-color: #c2dee8;
+		background-color: #c2dee8;	/*couleur du "voile" bleu*/
 	}
 	form
 	{
@@ -1113,7 +1109,7 @@ input[type="submit"]
 	{
 		padding-top: 50px;	/*hauteur du header*/
 	}
-	.para i, .rond-deux
+	.para i, .rond-deux	/*icônes fontawesome et rond bleu*/
 	{
 		display: none;
 	}
@@ -1160,7 +1156,7 @@ input[type="submit"]
 	aside
 	{
 		margin-top: 0;
-		align-self: flex-start;
+		align-self: flex-start;	/*et non plus flex-end*/
 	}
 	.para h2, .para p
 	{
@@ -1248,6 +1244,6 @@ input[type="submit"]
 	}
 	input[type="submit"]
 	{
-		margin: 10px auto;
+		margin: 10px auto;	/*10px vertical et centré horizontalement*/
 	}
 }
