@@ -21,7 +21,7 @@
 		<div class="bloc_page">
 			<header>
 				<img src="img/logo.png" alt="logo" id="logo" />
-				<nav class="dropdown">	<!--menu xs-->
+				<nav class="dropdown">	<!--menu smartphone-->
 					<i class="fas fa-bars"></i>
 					<div class="dropdown-content">
 						<a href="#">Accueil</a>
@@ -30,7 +30,7 @@
 						<a href="#contact">Contact</a>
 					</div>
 				</nav> 
-				<nav class="navigation">	<!--menu md et plus-->
+				<nav class="navigation">	<!--menu tablette et desktop-->
 					<ul class="menu">
 						<li><a class="active" href="#">Accueil</a></li>
 						<li><a href="#services">Services</a></li>
@@ -39,8 +39,14 @@
 					</ul>
 				</nav>
 			</header>
-			<section class="en-tete">
-				<div class="presentation">
+			<section class="en-tete"> <!--section en-tête avec slider-->
+				<div class="pres-xs">	<!--paragraphe de presentation sur slider pour smartphone-->
+					<h1>WEBAGENCY: L'AGENCE DE TOUS VOS PROJETS !</h1>
+					<p>Vous avez un projet web ?</p>
+					<p class="mb">la WebAgency vous aide à le réaliser !</p>
+					<button class="bouton-xs" type="button">Plus d'infos</button>
+				</div>
+				<div class="presentation">	<!--paragraphe de presentation sur slider pour tablette et desktop-->
 					<h1><span>WEBAGENCY </span>: L'AGENCE DE TOUS VOS PROJETS !</h1>
 					<p>Vous avez un projet web ? la WebAgency vous aide à le réaliser !</p>
 					<button type="button" class="info">Plus d'infos</button>
@@ -60,14 +66,8 @@
 					<div class="cercle-next"></div>
 					<a class="next" href="#" aria-label="flêche image suivante"><i class="fas fa-chevron-right color" aria-hidden="true"></i></a>
 				</div>
-				<div class="pres-xs">
-					<h1>WEBAGENCY: L'AGENCE DE TOUS VOS PROJETS !</h1>
-					<p>Vous avez un projet web ?</p>
-					<p class="mb">la WebAgency vous aide à le réaliser !</p>
-					<button class="bouton-xs" type="button">Plus d'infos</button>
-				</div>
 			</section>
-			<section id="services">
+			<section id="services">	<!--section "nos services"-->
 				<h1>NOS SERVICES</h1>
 				<div class="separateur">
 					<div class="trait"></div>
@@ -116,7 +116,7 @@
 					</aside>
 				</div>
 			</section>
-			<section id="portfolio">
+			<section id="portfolio">	<!--section "nos projets"-->
 				<h1>NOS PROJETS</h1>
 				<div class="separateur">
 					<div class="trait"></div>
@@ -124,7 +124,7 @@
 					<div class="trait"></div>
 				</div>
 				<p>Aperçu de quelques projets réalisés par notre équipe :</p>
-				<nav class="nav-portfolio">
+				<nav class="nav-portfolio">	<!--barre de navigation-->
 					<ul>
 						<li>
 							<a class="gauche activer" href="#allworks">All works<i class="fas fa-caret-down activ" aria-hidden="true"></i></a>
@@ -232,7 +232,7 @@
 						</figcaption>
 					</figure>
 				</div>
-				<div class="separateur-footer">
+				<div class="separateur-footer">	<!--pour smartphone-->
 					<div class="separateur">
 						<div class="trait"></div>
 						<div class="bordure"><div class="rond"></div></div>
@@ -241,10 +241,10 @@
 				</div>
 			</section>
 			<footer id="contact">
-				<div class="voile"></div>
+				<div class="voile"></div>	<!--voile bleu sur la carte-->
 				<iframe title="carte google map de la webagency" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246079848!2d2.3476369151177394!3d48.8730553076289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1558357823376!5m2!1sfr!2sfr" allowfullscreen>
 				</iframe>	<!--enlevé frameborder obsolète depuis html5 - ajouté title pour l'accessibilité-->
-				<form method="post" action="pagefictive.php">
+				<form method="post" action="pagefictive.php">	<!--formulaire de contact-->
 					<fieldset>
 						<h2>Contact Info</h2>
 						<p class="gras">WebAgency SAS</p>
