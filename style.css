@@ -603,11 +603,16 @@ figure
 	position: relative;	/*pour mettre figcaption et icône en absolute afin de les plaçer au dessus*/
 	overflow: hidden;
 }
-figcaption h3, figcaption p
+figcaption h2, figcaption p
 {
 	color: white;
 	text-align: left !important;	/*!important sinon c'est la règle du #portfolio avec text-align:center qui l'emporte*/
 	margin: 7px 0 0 7px;
+}
+figcaption h2
+{
+	font-family: 'robotoregular';
+	font-size: 18px;
 }
 .couleurs	/*règles pour l'icône fontawesone "oeil"*/
 {
@@ -623,7 +628,7 @@ figcaption h3, figcaption p
 }
 figcaption
 {
-	display: flex;	/*aligner horizontalemnt texte et icône*/
+	display: flex;	/*aligner horizontalement texte et icône*/
 	position: absolute;
 	bottom: 3px;
 	width: 100%;	/*100% de figure*/
@@ -740,13 +745,21 @@ input[type="submit"]	/*bouton "send message"*/
 
 @media screen and (min-width: 2560px)
 {
-	.presentation
+	.en-tete .presentation
 	{
 		left: 35% !important;
 	}
 	form
 	{
 		left: 55%;
+	}
+}
+
+@media screen and (min-width: 1920px)
+{
+	.presentation
+	{
+		left: 23% !important;
 	}
 }
 
@@ -1200,14 +1213,14 @@ input[type="submit"]	/*bouton "send message"*/
 		font-size: 12px;
 		bottom: 5px;
 	}
-	figcaption h3, figcaption p
+	figcaption h2, figcaption p
 	{
 		line-height: 1;
 	}
 	.fa-eye
 	{
 		left: 75%;
-		bottom: 66%;
+		bottom: 68%;
 	}
 	/* FOOTER ----------------*/
 	#contact
