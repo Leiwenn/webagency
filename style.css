@@ -350,8 +350,6 @@ header
 {
 	margin-top: 100px;	/*compenser la hauteur du header*/
 	height: 550px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
 .presentation	/*paragraphe sur slider*/
 {
@@ -427,8 +425,6 @@ span
 {
 	height: 670px;
 	padding-top: 90px;	/*compenser la hauteur du menu fixed pour les ancres du menu*/
-	-webkit-box-shadow: 0 -10px 30px rgba(211, 211, 211, 0.5);
-	box-shadow: 0 -10px 30px rgba(211, 211, 211, 0.5);	/*ombre de bas de section .en-tete*/
 }
 #services h1, .paragraphe
 {
@@ -510,8 +506,6 @@ aside
 {
 	padding-top: 90px;	/*pour compenser la hauteur du menu fixed*/
 	background-color: #F5F5F5;
-	-webkit-box-shadow: 0 -10px 20px rgba(211, 211, 211, 0.5);
-	box-shadow: 0 -10px 30px rgba(211, 211, 211, 0.5);	/*ombre de bas de section #services*/
 }
 #portfolio h1, #portfolio p
 {
@@ -888,7 +882,6 @@ input[type="submit"]	/*bouton "send message"*/
 		background-image: url(img/slider/bg1.jpg);	/*pas de slider mais image réutilisée en background*/
 		background-size: 100%;
 		background-repeat: no-repeat;
-		box-shadow: none;
 	}
 	.presentation
 	{
@@ -939,7 +932,6 @@ input[type="submit"]	/*bouton "send message"*/
 		background-image: url(img/slider/bg1.jpg);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		box-shadow: none;
 	}
 	.presentation
 	{
