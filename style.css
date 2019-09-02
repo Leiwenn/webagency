@@ -660,7 +660,7 @@ footer, .voile, iframe
 	height: 750px;
 	max-width: 1440px;
 }
-iframe	/*carte*/
+iframe 	/*carte*/
 {
 	width: 100%;
 	height: 100%;
@@ -674,7 +674,7 @@ iframe	/*carte*/
 	width: 100%;
 	position: absolute;	/*sur la carte*/
 }
-form	/*formulaire*/
+form 	/*formulaire*/
 {
 	background-color: rgba(255,255,255, 0.8);
 	max-width: 340px;
@@ -686,25 +686,26 @@ fieldset
 {
 	border: none;
 }
-form p, form h2
+form p, form h1
 {
 	line-height: 20%; /*hauteur de ligne*/
 	text-align: left;
 	margin-left: 6px;
 }
-form h2
+form h1
 {
 	margin-bottom: 30px;
+	font-size: 24px;
 }
 form p
 {
 	font-size: 14px;
 }
-.gras	/*partie en gras*/
+.gras 	/*partie en gras*/
 {
 	font-family: 'robotobold';
 }
-.souligner	/*partie soulignée*/
+.souligner 	/*partie soulignée*/
 {
 	text-decoration: underline dotted;
 	color: #64686D;
@@ -728,7 +729,7 @@ textarea
 {
 	height: 150px;
 }
-input[type="submit"]	/*bouton "send message"*/
+input[type="submit"] 	/*bouton "send message"*/
 {
 	margin-left: 6px;
 	padding: 6px 10px;
@@ -1003,7 +1004,7 @@ input[type="submit"]	/*bouton "send message"*/
 	{
 		display: none;
 	}
-	.dropdown	/*menu pour smartphone*/
+	.dropdown 	/*menu pour smartphone*/
 	{
 		display: block;
 		margin-bottom: 22px;
@@ -1011,7 +1012,7 @@ input[type="submit"]	/*bouton "send message"*/
 	}
 	.en-tete
 	{
-		background-image: linear-gradient(#686c71, #1fb3b1, #5cadd3, #686c71);	/*création d'un dégradé à partir des couleurs du logo*/
+		background-image: linear-gradient(#686c71, #1fb3b1, #5cadd3, #686c71);
 		height: 150px;
 		margin-top: 70px;
 	}
@@ -1079,7 +1080,7 @@ input[type="submit"]	/*bouton "send message"*/
 	#contact
 	{
 		height: 550px;
-		background-color: #c2dee8;	/*couleur du "voile" bleu*/
+		background-color: #c2dee8;
 	}
 	form
 	{
@@ -1090,7 +1091,7 @@ input[type="submit"]	/*bouton "send message"*/
 		height: 470px;
 		border: 1px solid #e5e5e5;
 	}
-	form h2, form p
+	form h1, form p
 	{
 		text-align: center;
 	}
@@ -1115,7 +1116,7 @@ input[type="submit"]	/*bouton "send message"*/
 	{
 		padding-top: 50px;	/*hauteur du header*/
 	}
-	.para i, .rond-deux	/*icônes fontawesome et rond bleu*/
+	.para i, .rond-deux
 	{
 		display: none;
 	}
@@ -1162,7 +1163,7 @@ input[type="submit"]	/*bouton "send message"*/
 	aside
 	{
 		margin-top: 0;
-		align-self: flex-start;	/*et non plus flex-end*/
+		align-self: flex-start;
 	}
 	.para h2, .para p
 	{
@@ -1226,7 +1227,7 @@ input[type="submit"]	/*bouton "send message"*/
 		width: 210px;
 		height: 360px;
 	}
-	form h2
+	form h1
 	{
 		font-size: 20px;
 		margin-left: 0;	/*enlever le margin-left 6px*/
@@ -1250,6 +1251,6 @@ input[type="submit"]	/*bouton "send message"*/
 	}
 	input[type="submit"]
 	{
-		margin: 10px auto;	/*10px vertical et centré horizontalement*/
+		margin: 10px auto;
 	}
 }
