@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport responsive-->
+		<link rel="stylesheet" type="text/css" href="style.css">	<!--ma feuille de style-->
+		<script src="https://kit.fontawesome.com/f2c3a49501.js"></script>	<!--icones fontawesome-->
+		<link rel="icon" href="img/favicon.png" />	<!--favicon-->
+		<title>WebAgency</title>
+		<meta name="description" content="WebAgency, agence de création de sites web à Paris" />
+		<!--Meta Twitter-->
+		<meta name="twitter:card" content="summary">
+		<!--Meta Facebook (et autres réseaux sociaux)-->
+		<meta property="og:title" content="WebAgency" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://leiwenn.github.io/webagency/" />
+		<meta property="og:image" content="https://leiwenn.github.io/webagency/img/portfolio/lapin.png" />
+		<meta property="og:description" content="WebAgency, agence de création de sites web à Paris" />
+	</head>
+	<body>
+		<div class="bloc_page">
+			<header>
+				<img src="img/logo.png" alt="logo" id="logo" />
+				<nav class="dropdown">	<!--menu smartphone-->
+					<i class="fas fa-bars"></i>
+					<div class="dropdown-content">
+						<a href="#">Accueil</a>
+						<a href="#services">Services</a>
+						<a href="#portfolio">Portfolio</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</nav> 
+				<nav class="navigation">	<!--menu tablette et desktop-->
+					<ul class="menu">
+						<li><a class="active" href="#">Accueil</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="en-tete"> <!--section en-tête avec slider-->
+				<div class="pres-xs">	<!--paragraphe de presentation sur slider pour smartphone-->
+					<h1>WEBAGENCY: L'AGENCE DE TOUS VOS PROJETS !</h1>
+					<p>Vous avez un projet web ?</p>
+					<p class="mb">la WebAgency vous aide à le réaliser !</p>
+					<button class="bouton-xs" type="button">Plus d'infos</button>
+				</div>
+				<div class="presentation">	<!--paragraphe de presentation sur slider pour tablette et desktop-->
+					<h1><span>WEBAGENCY </span>: L'AGENCE DE TOUS VOS PROJETS !</h1>
+					<p>Vous avez un projet web ? la WebAgency vous aide à le réaliser !</p>
+					<button type="button" class="info">Plus d'infos</button>
+				</div>
+				<div class="slider">
+					<ul class="slide">
+						<li>
+							<img src="img/slider/bg1.jpg" alt="photo d'une fillette avec de la peinture sur les doigts" />
+						</li>
+						<li>
+							<img src="img/slider/bg2.jpg" alt="photo d'un garçon à lunettes qui crie au mégaphone" />
+						</li>
+					</ul>
+					<div class="timer ligne"></div>
+					<div class="cercle-prev"></div>
+					<a class="prev" href="#" aria-label="flêche image précedente"><i class="fas fa-chevron-left color" aria-hidden="true"></i></a>
+					<div class="cercle-next"></div>
+					<a class="next" href="#" aria-label="flêche image suivante"><i class="fas fa-chevron-right color" aria-hidden="true"></i></a>
+				</div>
+			</section>
+			<section id="services">	<!--section "nos services"-->
+				<h2>NOS SERVICES</h2>
+				<div class="separateur">
+					<div class="trait"></div>
+					<div class="bordure"><div class="rond"></div></div>
+					<div class="trait"></div>
+				</div>
+				<div class="paragraphe">
+					<p>De la création à l'optimisation de votre référencement en passant par la rédaction, nous nous occupons de tout !</p>
+					<p>Parce que vous avez déjà bien assez à faire, laissez-nous créer votre site web à votre image.</p>
+				</div>
+				<div class="design">
+					<div class="ecran">
+						<img src="img/main-feature.png" alt="ecran" />
+					</div>
+					<aside>
+						<div class="para">
+							<i class="fas fa-chart-line fa-2x couleur" aria-hidden="true"></i>
+							<div class="bordure-rond-para rond-deux">
+								<div class="rond-para"></div>
+							</div>
+							<div>
+								<h3>UX design</h3>
+								<p>Interface, architecture, tout est pensé pour la meilleure expérience possible pour vos utilisateurs.</p>
+							</div>
+						</div>
+						<div class="para">
+							<i class="fas fa-cubes fa-2x couleur" aria-hidden="true"></i>
+							<div class="bordure-rond-para rond-deux">
+								<div class="rond-para"></div>
+							</div>
+							<div>
+								<h3>UI design</h3>
+								<p>Création d'interfaces graphiques agréables et pratiques : Logiciels, sites Web, Applications.</p>
+							</div>
+						</div>
+						<div class="para">
+							<i class="fas fa-chart-pie fa-2x couleur" aria-hidden="true"></i>
+							<div class="bordure-rond-para rond-deux">
+								<div class="rond-para"></div>
+							</div>
+							<div>
+								<h3>SEO</h3>
+								<p>Référencement naturel de votre site et/ou application optimisés pour les moteurs de recherche, amélioration de votre visibilité.</p>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</section>
+			<section id="portfolio">	<!--section "nos projets"-->
+				<h2>NOS PROJETS</h2>
+				<div class="separateur">
+					<div class="trait"></div>
+					<div class="bordure"><div class="rond"></div></div>
+					<div class="trait"></div>
+				</div>
+				<p>Aperçu de quelques projets réalisés par notre équipe :</p>
+				<nav class="nav-portfolio">	<!--barre de navigation-->
+					<ul>
+						<li>
+							<a class="gauche activer" href="#allworks">All works<i class="fas fa-caret-down activ" aria-hidden="true"></i></a>
+						</li>
+						<li>
+							<a href="#creative">Créative<i class="fas fa-caret-down" aria-hidden="true"></i></a>
+						</li>
+						<li>
+							<a href="#corporate">Corporate<i class="fas fa-caret-down"></i></a>
+						</li>
+						<li>
+							<a class="droit" href="#portfolio">Portfolio<i class="fas fa-caret-down" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</nav>
+				<div class="bloc-projets">
+					<figure>
+						<img src="img/portfolio/visage.png" alt="dessin abstrait d'un visage, on voit son nez et ses lunettes noires incluant des sourcils" />
+						<figcaption class="overlay">
+							<div>
+								<h3>Editions "Ratata"</h3>
+								<p>Catégorie "Créative"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/portfolio/lapin.png" alt="dessin légèrement cubique d'un homme à lunette déguisé en lapin rose tenant un paquet cadeau" />
+						<figcaption class="overlay">
+							<div>
+								<h3>"L'après gardiste"</h3>
+								<p>Catégorie "Créative"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/portfolio/pompadour.png" alt="logo d'une marque: pompadour en blanc sur fond lie de vin" />
+						<figcaption class="overlay">
+							<div>
+								<h3>Boutique sportswear</h3>
+								<p>Catégorie "Créative"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/portfolio/cahier.jpg" alt="photo d'un tas de feuilles empillées, on voit, dessiné dessus une maquette de présentation" />
+						<figcaption class="overlay">
+							<div>
+								<h3>Mock-up</h3>
+								<p>Catégorie "Corporate"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/portfolio/sacs.jpg" alt="sacs en papier type sacs de shopping" />
+						<figcaption class="overlay">
+							<div>
+								<h3>Personal shopper</h3>
+								<p>Catégorie "Corporate"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/portfolio/ville.png" alt="dessin d'un pont avec des batiments en arriere plan" />
+						<figcaption class="overlay">
+							<div>
+								<h3>Galerie d'art</h3>
+								<p>Catégorie "Créative"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/portfolio/pinceau.png" alt="dessin d'un pinceau qui décolle comme une fusee" />
+						<figcaption class="overlay">
+							<div>
+								<h3>Portfolio dessinateur</h3>
+								<p>Catégorie "Portfolio"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/portfolio/outils.jpg" alt="outils de création sur papier" />
+						<figcaption class="overlay">
+							<div>
+								<h3>Imprimerie Luire</h3>
+								<p>Catégorie "Corporate"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="img/portfolio/full.jpg" alt="dessin réaliste d'un hamburger" />
+						<figcaption class="overlay">
+							<div>
+								<h3>Muber eat</h3>
+								<p>Catégorie "Créative"</p>
+							</div>
+							<a href="#"><i class="far fa-eye couleurs"></i></a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="separateur-footer">	<!--pour smartphone-->
+					<div class="separateur">
+						<div class="trait"></div>
+						<div class="bordure"><div class="rond"></div></div>
+						<div class="trait"></div>
+					</div>
+				</div>
+			</section>
+			<footer id="contact">
+				<div class="voile"></div>	<!--voile bleu sur la carte-->
+				<iframe title="carte google map de la webagency" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246079848!2d2.3476369151177394!3d48.8730553076289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1558357823376!5m2!1sfr!2sfr" allowfullscreen>
+				</iframe>	<!--enlevé frameborder obsolète depuis html5 - ajouté title pour l'accessibilité-->
+				<form method="post" action="pagefictive.php">	<!--formulaire de contact-->
+					<fieldset>
+						<h2>Contact Info</h2>
+						<p class="gras">WebAgency SAS</p>
+						<p>25 rue d'Hauteville 75010 Paris</p>
+						<p><span class="souligner">Tel :</span> 01 02 03 04 05</p>
+						<input type="text" title="name" name="name" id="name" placeholder="Name" />
+						<input type="email" name="email" placeholder="Email" />
+						<input type="text" title="subject" name="subject" id="subject" placeholder="Subject" />
+						<textarea title="textarea" name="message" id="message" placeholder="Message"></textarea>
+						<input type="submit" value="Send Message" onclick="alert('Message envoyé !')">	<!--ajouté pop-up de confirmation d'envoi-->
+					</fieldset>
+				</form>
+			</footer>
+		</div>
+	</body>
+</html>
